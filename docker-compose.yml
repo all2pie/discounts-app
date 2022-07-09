@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  discountDB:
+    image: mongo:5
+    volumes:
+      - discountDB:/data/db
+    ports:
+      - 27017:27017
+
+volumes:
+  discountDB:
